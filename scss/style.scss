@@ -1,0 +1,195 @@
+$primary-color: #37384E;
+$secondary-color:#6C63FF;
+$light-letter-cl: #ffff;
+$secondary-font: Georgia, 'Times New Roman', Times, serif;
+$primary-font:'Roboto', sans-serif;
+$error-color: #ffb3b3;
+$success-color: #d6f5d6;
+
+* {
+    box-sizing: content-box;
+    margin: auto;
+    padding: 0;
+}
+
+body{
+    background-color: $primary-color;  
+}
+
+
+input{
+    width: 70%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+  }
+  
+  button{
+      padding: 12px;
+      color: $secondary-color;
+      font-family: $primary-font;
+      font-size: medium;
+      border-radius: 5px;
+      border-color: 1px solid $primary-color;
+      font-weight: 600;  
+  }
+
+
+p, li {
+    font-family: $secondary-font;
+    color: $primary-color;
+    text-decoration: none;
+    list-style: none;
+}
+
+label, a{
+    font-family: $secondary-font;
+    color: $secondary-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+color:$secondary-color;
+font-family: $primary-font;
+font-weight: 600;
+
+}
+
+
+
+
+#buttom_form {
+    margin: 14px 0 14px 0;
+}
+
+
+
+
+.form_info{
+    
+ margin: 40px 0 40px 0;
+}
+
+#form{
+    display: inline;
+    
+    margin-top: 90px;
+  
+  }
+
+
+//   disable style
+
+.inactive_button{
+    opacity:0.3 ;
+}
+
+
+// error style
+.error_active {
+    color: $error-color;
+    border-radius: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+  div.lds-dual-ring {
+    display: inline-flex; 
+    width: 80px;
+    height: 80px;
+  }
+
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #cef;
+    border-color: #cef transparent #cef transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  .success_active{
+    display: none;
+  }
+
+#success {
+background-color: $success-color;
+padding: 10px;
+
+}
+
+
+// @media screen and (min-width: 600px) {
+   
+//     .form_container{
+//         background-color: $light-letter-cl;
+//         display: block;
+//         text-align: center;
+//         width: 50%;
+//         padding: 10px;
+//         border-radius: 12px; 
+//         margin-top: 30px; 
+//     }
+
+//     img{
+//         display: none;
+//     }
+
+   
+
+// }
+
+
+@media screen and (min-width: 250px) {
+   
+    .form_container{
+        background-color: $light-letter-cl;
+        display: block;
+        text-align: center;
+        width: 50%;
+        padding: 10px;
+        border-radius: 12px; 
+        margin-top: 30px; 
+    }
+
+    img{
+        display: none;
+    }
+
+   
+
+}
+
+
+@media screen and (min-width: 768px){
+    .form_container{
+        background-color: $light-letter-cl;
+        display: flex;
+        margin: auto;
+        text-align: center;
+        width: 80%;
+        border-radius: 12px;  
+    }
+
+      
+img{
+    width: 100%;
+    display: flex;
+}
+    
+}
